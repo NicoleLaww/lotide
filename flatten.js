@@ -1,3 +1,19 @@
+const assertArraysEqual = function(arr1, arr2) {
+  let sameLength = arr1.length === arr2.length;
+  let sameValues = true;
+  for (let i = 0; i <= arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      sameValues = false;
+      break;
+    }
+  }
+  if (sameValues && sameLength) {
+    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+  } else {
+    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);
+  }
+};
+
 const flatten = (arr) => {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -12,7 +28,9 @@ const flatten = (arr) => {
       }
     }
   }
-  console.log(newArr);
+  return (newArr);
 };
 
 flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
+
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
