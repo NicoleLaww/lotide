@@ -19,7 +19,7 @@ const countOnly = function(allItemsArr, itemsToCountObj) {
       }
     }
   }
-  return(results);
+  return results;
 };
 
 
