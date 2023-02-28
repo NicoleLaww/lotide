@@ -14,21 +14,22 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
+// function that flattens nested array(s) inside an array
 const flatten = (arr) => {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
+  let newArr = [];// create an empty array
+  for (let i = 0; i < arr.length; i++) {// loop through each element of the arr
     //console.log(arr[i]);
-    if (!Array.isArray(arr[i])) {
+    if (!Array.isArray(arr[i])) {// is not an array
     //console.log(Array.isArray(arr[i]));
-      newArr.push(arr[i]);
-    } else {
-      let smallArr = arr[i];
-      for (let j = 0; j < smallArr.length; j++) {
-        newArr.push(smallArr[j]);
+      newArr.push(arr[i]);// push number to new array
+    } else {// if it is an array
+      let smallArr = arr[i];// defining the smaller array
+      for (let j = 0; j < smallArr.length; j++) {// loop through each element of the smaller array
+        newArr.push(smallArr[j]);// push numbers in smaller array to new array
       }
     }
   }
-  return (newArr);
+  return (newArr);// return new array
 };
 
 flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]

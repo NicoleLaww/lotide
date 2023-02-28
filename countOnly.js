@@ -1,21 +1,22 @@
+// function that makes sure that the expected values === to actual value of the function you are running
 const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  if (actual === expected) {// if actual equals to expected
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);// Passes
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);// Fails
   }
 };
-
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
+// function counting only specific objects
+// allItemsArr: an array of strings that we need to look through
+// itemsToCountObj: an object specifying what to count
 const countOnly = function(allItemsArr, itemsToCountObj) {
-  const results = {};
-  for (const item of allItemsArr) {
-    if (itemsToCountObj[item]) {
-      if (results[item]) {
-        results[item] += 1;
+  const results = {};// create empty object
+  for (const item of allItemsArr) {// loop through all items of the array
+    if (itemsToCountObj[item]) {//checking what names to count, what names is true
+      if (results[item]) {// check if name exists in object
+        results[item] += 1;// if does, add one
       } else {
-        results[item] = 1;
+        results[item] = 1;// if it doesn't, assign one
       }
     }
   }

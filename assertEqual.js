@@ -1,8 +1,9 @@
+// function that makes sure the the expected value(s) === to actual value of the function you are running
 const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  if (actual === expected) {// if actual equals to expected
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);// Passes
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);// Fails
   }
 };
 

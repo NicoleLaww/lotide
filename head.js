@@ -1,12 +1,14 @@
+// function that returns the first element of an arr
 const head = function(arr) {
   return arr[0];
 };
 
+// function that makes sure that the expected values === to actual value of the function you are running
 const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  if (actual === expected) {// if actual equals to expected
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);//Passes
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);//Fails
   }
 };
 
