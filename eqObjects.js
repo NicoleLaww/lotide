@@ -7,35 +7,34 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// function that compares if two objects are the same 
+// function that compares if two objects are the same
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);// create a var keys1 for all the keys for object1
   const keys2 = Object.keys(object2);// create a var keys2 for all the keys for object2
-  console.log(keys1);
-  console.log(keys2); 
-  console.log(keys2.length);
-  console.log(keys1.length);
+  // console.log(keys1);
+  // console.log(keys2);
+  // console.log(keys2.length);
+  // console.log(keys1.length);
   if (keys1.length !== keys2.length) {// there are not the same amount of keys in the objects
-    return false; 
-  } else {// if objects' have the same amount of keys 
-    for (let i = 0; i < keys1.length; i++) {
-      console.log(object1[keys1[i]]);
-      console.log(object1[keys2[i]]); 
-      if (object1[keys1[i]] !== object2[keys2[i]]) {
+    return false;
+  } 
+  for (let key of keys1) {// looping through values
+      // console.log(object1[keys1[i]]);
+      // console.log(object1[keys2[i]]);
+      if (object1[key] !== object2[key]) {
         return false;
-      }
+      } 
     }
-  }
-return true;
+  return true;
 };
 
 const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
+const anotherShirtObject = { size: "medium", color: "red" };
 
 eqObjects(shirtObject , anotherShirtObject); // => true
 
-const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
-// eqObjects(shirtObject , longSleeveShirtObject); // => false
+const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+eqObjects(shirtObject , longSleeveShirtObject); // => false
 
-// assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
-// assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
+assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
+assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
