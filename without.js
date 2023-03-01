@@ -1,4 +1,4 @@
-// function that makes sure that the expected values of an array === to actual value the array you are comparing to
+// function that makes sure that the expected values of an array === to actual values the array you are comparing to
 const assertArraysEqual = function(arr1, arr2) {
   let sameLength = arr1.length === arr2.length;// define var sameLength, if arr1 and arr2 have the same length
   let sameValues = true;// define var sameValues, default to true

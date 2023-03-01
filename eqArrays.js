@@ -12,7 +12,7 @@ const eqArrays = (arr1, arr2) => {
   return true;// if same length and arr[i] equals arr2[i], return true, ends here
 };
 
-// function that makes sure that the expected values === to actual value of the function you are running
+// function that makes sure that the expected values === to actual values of the function you are running
 const assertEqual = function(actual, expected) {
   if (actual === expected) {// if actual equals expected
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);// Passes
