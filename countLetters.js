@@ -22,12 +22,14 @@ const countLetters = (string) => {
   return result;// return letter count for all letters
 };
 
-console.log(countLetters('LHL'));
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters('LHL'));
+// console.log(countLetters("lighthouse in the house"));
 
-countLetters('LHL');
-countLetters("lighthouse in the house");
+// countLetters('LHL');
+// countLetters("lighthouse in the house");
 
-let string = "LHL";
-const result1 = countLetters(string);
-assertEqual(result1["L"], 2);// Passes
+// let string = "LHL";
+// const result1 = countLetters(string);
+// assertEqual(result1["L"], 2);// Passes
+
+module.exports = countLetters;

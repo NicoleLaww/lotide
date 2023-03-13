@@ -73,11 +73,13 @@ const eqObjects = function(object1, object2) {
 // assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
 
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject); // => true
-assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject), true);
+// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+// eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject); // => true
+// assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject), true);
 
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject); // => false
-assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false);
+// const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+// eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject); // => false
+// assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false);
+
+module.exports = eqObjects;

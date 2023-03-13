@@ -33,9 +33,11 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
 
-assertArraysEqual(map(words, word => word[0]), ["g", "c", "t", "m", "t"]);// PASS
-assertArraysEqual(map(even, num => {return num % 2 === 0;}), [0, 2, 4, 6]);// FAIL
-assertArraysEqual(map(odd, num => {return num % 2 !== 0;}), [true, true, true, true, true]);// PASS
+// assertArraysEqual(map(words, word => word[0]), ["g", "c", "t", "m", "t"]);// PASS
+// assertArraysEqual(map(even, num => {return num % 2 === 0;}), [0, 2, 4, 6]);// FAIL
+// assertArraysEqual(map(odd, num => {return num % 2 !== 0;}), [true, true, true, true, true]);// PASS
+
+module.exports = map;

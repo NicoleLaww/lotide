@@ -36,9 +36,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-letterPositions("lighthouse in the house");
-letterPositions("hello");
+// letterPositions("lighthouse in the house");
+// letterPositions("hello");
 
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2, 3]);
+// assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello").l, [2, 3]);
 
+module.exports = letterPositions;
