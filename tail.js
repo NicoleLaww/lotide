@@ -4,3 +4,5 @@ const tail = function(arr) {
 };
 
 module.exports = tail;
+
+console.log(tail([]));
