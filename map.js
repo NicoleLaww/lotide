@@ -41,3 +41,4 @@ const map = function(array, callback) {
 // assertArraysEqual(map(odd, num => {return num % 2 !== 0;}), [true, true, true, true, true]);// PASS
 
 module.exports = map;
+
