@@ -26,7 +26,7 @@ const assertArraysEqual = function(arr1, arr2) {
 // const odd = [1, 3, 5, 7, 9];
 
 const map = function(array, callback) {
-  const results = [];// create empty array
+  const results = [];
   for (let item of array) {// loop through each item of array
     results.push(callback(item));// run callback function and pushes result into empty array
   }

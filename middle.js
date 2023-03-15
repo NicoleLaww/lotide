@@ -1,8 +1,8 @@
 // function that returns the middle values, different for even/odd and under 3 numbers in an array
 const middle = function(array) {
-  const middleIndex = Math.floor(array.length / 2);// creating variable for middleIndex
+  const middleIndex = Math.floor(array.length / 2);
   if (array.length < 3) {// if under 3 in array.length
-    return [];// returns empty array
+    return [];
   }
   if (array.length % 2 !== 0) {// if odd, there will be 1 return value
     const middleElement = array[middleIndex];

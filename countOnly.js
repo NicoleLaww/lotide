@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 // allItemsArr: an array of strings that we need to look through
 // itemsToCountObj: an object specifying what to count
 const countOnly = function(allItemsArr, itemsToCountObj) {
-  const results = {};// create empty object
+  const results = {};
   for (const item of allItemsArr) {// loop through all items of the array
     if (itemsToCountObj[item]) {//checking what names to count, what names is true
       if (results[item]) {// check if name exists in object

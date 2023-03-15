@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 
 //function that scans the object and returns the first key which contains the given value. If no key with that value, return undefined.
 const findKeyByValue = function(object, value) {
-  let keyFinal = "";// creating an empty string for our final key
+  let keyFinal = "";
   const keys = Object.keys(object);// creating a var keys, that will display all keys in the object
   //console.log(keys);// double check it displays all keys
   for (let i = 0; i < keys.length; i++) {// looping through keys

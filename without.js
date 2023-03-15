@@ -17,7 +17,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 // function that helps filter out unwanted data
 const without = (arr1, arr2) => {
-  let newArr = [];// create empty array
+  let newArr = [];
   for (let i = 0; i < arr1.length; i++) {// loop through each element of arr1
     let found = false;// define var found as false
     for (let j = 0; j < arr2.length; j++) {// loop through each element of arr2

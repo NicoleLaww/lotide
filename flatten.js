@@ -16,7 +16,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 // function that flattens nested array(s) inside an array
 const flatten = (arr) => {
-  let newArr = [];// create an empty array
+  let newArr = [];
   for (let i = 0; i < arr.length; i++) {// loop through each element of the arr
     //console.log(arr[i]);
     if (!Array.isArray(arr[i])) {// is not an array

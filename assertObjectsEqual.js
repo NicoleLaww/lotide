@@ -14,8 +14,8 @@ const eqArrays = (arr1, arr2) => {
 
 // function that compares objects, same length & same value
 const eqObjects = function(object1, object2) {
-  const keys1 = Object.keys(object1);// create a var keys1 for all the keys for object1
-  const keys2 = Object.keys(object2);// create a var keys2 for all the keys for object2
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
   if (keys1.length !== keys2.length) {// there are not the same amount of keys in the objects
     return false;
   }

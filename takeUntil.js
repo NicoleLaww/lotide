@@ -23,7 +23,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 //function will return a "slice of the array with elements taken from the beginning." Should keep going until the callback/predicate returns a truthy value.
 const takeUntil = function(array, callback) {
-  const results = [];// create empty array
+  const results = [];
   for (let item of array) {// loop through each element of the array
     if (!callback(item)) {// if the callback(item) is not true
       results.push(item);// push item to array

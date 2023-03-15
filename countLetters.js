@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 // function counting the letters in a string
 const countLetters = (string) => {
-  const result = {};// create empty object
+  const result = {};
   for (const letter of string) {// looping through each letter
     if (letter !== " ") {// if the letter does not equal to a space
       if (result[letter]) {// check if letter exists in object
