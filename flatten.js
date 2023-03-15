@@ -19,17 +19,17 @@ const flatten = (arr) => {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {// loop through each element of the arr
     //console.log(arr[i]);
-    if (!Array.isArray(arr[i])) {// is not an array
+    if (!Array.isArray(arr[i])) {
     //console.log(Array.isArray(arr[i]));
       newArr.push(arr[i]);// push number to new array
-    } else {// if it is an array
+    } else {
       let smallArr = arr[i];// defining the smaller array
       for (let j = 0; j < smallArr.length; j++) {// loop through each element of the smaller array
         newArr.push(smallArr[j]);// push numbers in smaller array to new array
       }
     }
   }
-  return (newArr);// return new array
+  return (newArr);
 };
 
 // flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]

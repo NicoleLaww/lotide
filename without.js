@@ -1,7 +1,7 @@
 // function that makes sure that the expected values of an array === to actual values the array you are comparing to
 const assertArraysEqual = function(arr1, arr2) {
-  let sameLength = arr1.length === arr2.length;// define var sameLength, if arr1 and arr2 have the same length
-  let sameValues = true;// define var sameValues, default to true
+  let sameLength = arr1.length === arr2.length;
+  let sameValues = true;// default to true
   for (let i = 0; i <= arr1.length; i++) {// loop through each element of arr1
     if (arr1[i] !== arr2[i]) {// if arr1[i] does not equal to arr2[i]
       sameValues = false;// sameValues changes to false
@@ -9,9 +9,9 @@ const assertArraysEqual = function(arr1, arr2) {
     }
   }
   if (sameValues && sameLength) {// if the arrays have the same length and same values
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);// Passes
+    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);// Fails
+    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 

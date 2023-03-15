@@ -1,23 +1,23 @@
 // function comparing two arrays using same length and same value
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {// if arr1's length does not equal to arr2's
-    return false;// returns false, ends here
+    return false;
   } else {// if arr1's length equals to arr2's
     for (let i = 0; i <= arr1.length; i++) {// loop through each element of arr1
       if (arr1[i] !== arr2[i]) {// if arr1[i] does not equal arr2[i]
-        return false;// return false, ends here
+        return false;
       }
     }
   }
-  return true;// if same length and arr[i] equals arr2[i], return true, ends here
+  return true;
 };
 
 // function that makes sure the the expected value(s) === to actual value(s) of the function you are running
 const assertEqual = function(actual, expected) {
   if (actual === expected) {// if actual equals to expected
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);// Passes
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);// Fails
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -40,32 +40,6 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
-
-const cd = { c: "1", d: ["2", 3] };
-const dc = { c: "1", d: ["2", 3, 4] };
-
-console.log(eqObjects(cd, dc));
-
-// function that compares objects, same length & same value
-// const eqObjects = function(object1, object2) {
-//   const keys1 = Object.keys(object1);// create a var keys1 for all the keys for object1
-//   const keys2 = Object.keys(object2);// create a var keys2 for all the keys for object2
-//   // console.log(keys1);
-//   // console.log(keys2);
-//   // console.log(keys2.length);
-//   // console.log(keys1.length);
-//   if (keys1.length !== keys2.length) {// there are not the same amount of keys in the objects
-//     return false;
-//   }
-//   for (let key of keys1) {// looping through keys
-//       // console.log(object1[keys1[i]]);
-//       // console.log(object1[keys2[i]]);
-//       if (object1[key] !== object2[key]) {// if values are not the same
-//         return false;
-//       }
-//     }
-//   return true;
-// };
 
 // const shirtObject = { color: "red", size: "medium" };
 // const anotherShirtObject = { size: "medium", color: "red" };
