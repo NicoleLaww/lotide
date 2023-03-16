@@ -12,12 +12,11 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(object, value) {
   let keyFinal = "";
   const keys = Object.keys(object);// creating a var keys, that will display all keys in the object
-  //console.log(keys);// double check it displays all keys
   for (let i = 0; i < keys.length; i++) {// looping through keys
-    //console.log(object[keys[i]]);// double check it displays all values
     const multipleValues = object[keys[i]];// create var multipleValues, that will display all values in the object
     if (multipleValues === value) {// if values equals to inputted value
       keyFinal = keys[i];// key is assigned to keyFinal
+      break;
     } else {
       keyFinal = undefined;// if values do not equal to inputted value, undefined is assigned
     }
