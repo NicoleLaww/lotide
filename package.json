@@ -2,7 +2,7 @@
   "name": "@nicolelaw/lotide",
   "version": "1.0.1",
   "description": "online library of various packages for use",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
