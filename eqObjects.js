@@ -28,13 +28,19 @@ const eqObjects = function(object1, object2) {
   if (keys1.length !== keys2.length) {// there are not the same amount of keys in the objects
     return false;
   }
+
   for (let key of keys1) {// looping through keys
-    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {// if the values are arrays
-      if (eqArrays(object1[key], object2[key])) {// run through function eqArrays to check if they are same
-        return true;
+    const value1 = object1[key];
+    const value2 = object2[key];
+
+    if (Array.isArray(value1)) {// if the values are arrays
+      if (!eqArrays(value1, value2)) {// run through function eqArrays to check if they are same
+        return false;
       }
-      return false;
-    } else if (object1[key] !== object2[key]) {// if values are not arrays and are not the same
+      continue;// continue to next object
+    }
+
+    if (value1 !== value2) {// if values are not arrays and are not the same
       return false;
     }
   }
